@@ -1,0 +1,4 @@
+baseURL = "https://www.zbox.io/"
+languageCode = "en-us"
+title = "Zbox"
+disableHugoGeneratorInject = true

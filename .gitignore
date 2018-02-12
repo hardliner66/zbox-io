@@ -10,3 +10,9 @@ $RECYCLE.BIN/
 
 # OSX
 .DS_Store
+
+# node
+node_modules/
+
+# Semantic UI
+semantic/dist/

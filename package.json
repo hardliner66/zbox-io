@@ -1,0 +1,16 @@
+{
+  "name": "zbox-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "semantic-ui": "^2.2.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}

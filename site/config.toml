@@ -1,4 +1,4 @@
 baseURL = "https://www.zbox.io/"
 languageCode = "en-us"
-title = "Zbox"
+title = "Zbox - Zero-details, privacy-focused embeddable file system."
 disableHugoGeneratorInject = true

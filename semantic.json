@@ -20,9 +20,21 @@
   "rtl": false,
   "version": "2.2.14",
   "components": [
+    "button",
+    "container",
+    "dimmer",
+    "grid",
+    "header",
+    "icon",
+    "item",
+    "list",
+    "menu",
     "reset",
+    "segment",
+    "sidebar",
     "site",
-    "container"
+    "state",
+    "visibility"
   ],
   "all-components": [
     "reset",

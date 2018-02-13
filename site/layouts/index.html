@@ -1,6 +1,44 @@
 {{ partial "header" . }}
 
-<h1>body</h1>
+<div class="ui sidebar inverted vertical menu left">
+  <a class="item">1</a>
+  <a class="item">2</a>
+  <a class="item">3</a>
+</div>
+<div class="pusher">
+  <header class="ui basic vertical segment">
+    <div class="ui grid container">
+      <div class="left floated three wide column">
+        <a href="/">Zbox</a>
+      </div>
+      <nav id="site-nav" class="right floated seven wide column">
+        <div class="ui text menu">
+          <a class="right item" href="/start">Get Started</a>
+          <a class="item" href="/how">How It Works</a>
+          <a class="item" href="/docs">Docs</a>
+          <a class="item" href="https://github.com/zboxfs/zbox">GitHub</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="ui container basic vertical segment">
+    <section class="ui stackable centered padded grid">
+      <div class="center aligned three wide column">
+        <img src="svg/logo.svg" width="160" height="160" />
+      </div>
+      <div id="hero" class="seven wide column">
+        <h1 class="ui huge header">Keep App Files Securely and Privately</h1>
+        <p>Zbox is a zero-details, privacy-focused embeddable file system.</p>
+        <button class="ui huge primary button">
+          Get Started <i class="arrow circle right icon"></i>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="ui inverted basic segment">
+    <div class="ui container">footer</div>
+  </footer>
+</div>
 
 {{ partial "footer" . }}
 

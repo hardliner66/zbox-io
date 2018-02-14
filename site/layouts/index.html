@@ -1,24 +1,28 @@
 {{ partial "header" . }}
 
+<!-- Sidebar Menu -->
 <div class="ui sidebar inverted vertical menu left">
-  <a class="item">1</a>
-  <a class="item">2</a>
-  <a class="item">3</a>
+  <a class="item" href="/">Home</a>
+  <a class="item" href="/start">Get Started</a>
+  <a class="item" href="/how">How It Works</a>
+  <a class="item" href="/docs">Docs</a>
+  <a class="item" href="https://github.com/zboxfs/zbox">GitHub</a>
 </div>
+
+<!-- Main Content -->
 <div class="pusher">
   <header class="ui basic vertical segment">
-    <div class="ui grid container">
-      <div class="left floated three wide column">
-        <a href="/">Zbox</a>
+    <div id="site-nav" class="ui container">
+      <div class="ui large text menu">
+        <a class="toc item"><i class="sidebar icon"></i></a>
+        <a class="logo item" href="/"><h1 class="ui large header">Zbox</h1></a>
+        <nav class="right item">
+            <a class="item" href="/start">Get Started</a>
+            <a class="item" href="/how">How It Works</a>
+            <a class="item" href="/docs">Docs</a>
+            <a class="ui primary basic button" href="https://github.com/zboxfs/zbox">GitHub</a>
+        </nav>
       </div>
-      <nav id="site-nav" class="right floated seven wide column">
-        <div class="ui text menu">
-          <a class="right item" href="/start">Get Started</a>
-          <a class="item" href="/how">How It Works</a>
-          <a class="item" href="/docs">Docs</a>
-          <a class="item" href="https://github.com/zboxfs/zbox">GitHub</a>
-        </div>
-      </nav>
     </div>
   </header>
   <main class="ui container basic vertical segment">

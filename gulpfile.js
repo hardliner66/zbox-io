@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var exec = require('child_process').exec;
+var minify = require('gulp-minify');
 var BrowserSync = require("browser-sync");
 var uiWatch = require('./semantic/tasks/watch');
 var uiBuild = require('./semantic/tasks/build');
@@ -34,6 +35,20 @@ gulp.task('copy-js', function() {
   gulp
     .src('semantic/dist/semantic.min.js')
     .pipe(gulp.dest('public/js'));
+  gulp
+    .src('src/js/app.js')
+    .pipe(minify())
+    .pipe(gulp.dest('public/js/app.min.js'));
+});
+
+gulp.task('app-js', function() {
+  gulp
+    .src('src/js/app.js')
+    .pipe(minify({
+      ext: { min: '.min.js' },
+      noSource: true
+    }))
+    .pipe(gulp.dest('public/js'));
 });
 
 gulp.task('build-copy', ['build-ui'], function() {
@@ -53,7 +68,12 @@ gulp.task('watch-js', ['copy-js'], function(cb) {
   cb();
 });
 
-gulp.task('build', ['build-copy', 'hugo'], function() {
+gulp.task('watch-app-js', ['app-js'], function(cb) {
+  browserSync.reload();
+  cb();
+});
+
+gulp.task('build', ['build-copy', 'app-js', 'hugo'], function() {
 });
 
 gulp.task('server', ['build'], function() {
@@ -61,9 +81,9 @@ gulp.task('server', ['build'], function() {
 
   gulp.watch('semantic/dist/semantic.min.css', ['copy-css']);
   gulp.watch('semantic/dist/semantic.min.js', ['watch-js']);
+  gulp.watch('src/js/app.js', ['watch-app-js']);
 
   gulp.watch('site/**/*', ['hugo']);
 
   browserSync.init({ server: { baseDir: "public" } });
 });
-

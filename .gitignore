@@ -16,3 +16,6 @@ node_modules/
 
 # Semantic UI
 semantic/dist/
+
+# VS code
+.vscode/

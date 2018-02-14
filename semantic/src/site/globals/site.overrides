@@ -6,8 +6,13 @@
   .menu {
     margin: 0;
 
-    a {
-      padding: @relative10px @relative12px;
+    a:not(:first-child):not(:last-child) {
+      padding-left: @relative13px;
+      padding-right: @relative13px;
+    }
+
+    .toc {
+      display: none;
     }
   }
 }
@@ -19,8 +24,9 @@
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.17rem;
     font-weight: 300;
+    color: @mutedTextColor;
   }
 }
 
@@ -33,6 +39,17 @@
   [class*="widescreen only"]:not(.mobile),
   [class*="or lower hidden"] {
     display: none !important;
+  }
+
+  #site-nav {
+    .menu {
+      .logo, nav {
+        display: none;
+      }
+      .toc {
+        display: block;
+      }
+    }
   }
 
   #hero {
@@ -49,6 +66,21 @@
   [class*="widescreen only"]:not(.tablet),
   [class*="or lower hidden"]:not(.mobile) {
     display: none !important;
+  }
+
+  #site-nav {
+    .menu {
+      .logo, nav {
+        display: none;
+      }
+      .toc {
+        display: block;
+      }
+    }
+  }
+
+  #hero {
+    text-align: center;
   }
 }
 

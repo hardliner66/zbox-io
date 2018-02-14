@@ -1,11 +1,13 @@
 {
   "name": "zbox-io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for zbox.io",
+  "repository": "https://github.com/zboxfs/zbox-io",
   "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
+    "gulp-minify": "^2.1.0",
     "semantic-ui": "^2.2.14"
   },
   "devDependencies": {},

@@ -3,4 +3,4 @@
 *******************************/
 
 @fontName          : 'Open Sans';
-@googleFontSizes   : '300,400,700,400italic,700italic';
+@googleFontSizes   : '300,400,700,400italic';

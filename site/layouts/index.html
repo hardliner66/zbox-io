@@ -14,9 +14,9 @@
   <header class="ui basic vertical segment">
     <div id="site-nav" class="ui container">
       <div class="ui large text menu">
-        <a class="toc item"><i class="sidebar icon"></i></a>
-        <a class="logo item" href="/"><h1 class="ui large header">Zbox</h1></a>
-        <nav class="right item">
+        <a class="toc item mobile only"><i class="sidebar icon"></i></a>
+        <a class="item mobile hidden" href="/"><h1 class="ui large header">Zbox</h1></a>
+        <nav class="right item mobile hidden">
             <a class="item" href="/start">Get Started</a>
             <a class="item" href="/how">How It Works</a>
             <a class="item" href="/docs">Docs</a>
@@ -26,11 +26,11 @@
     </div>
   </header>
   <main class="ui container basic vertical segment">
-    <section class="ui stackable centered padded grid">
+    <section id="hero" class="ui stackable centered grid">
       <div class="center aligned three wide column">
-        <img src="svg/logo.svg" width="160" height="160" />
+        <img src="svg/logo.svg" />
       </div>
-      <div id="hero" class="seven wide column">
+      <div class="seven wide column mobile center">
         <h1 class="ui huge header">Keep App Files Securely and Privately</h1>
         <p>Zbox is a zero-details, privacy-focused embeddable file system.</p>
         <button class="ui huge primary button">
@@ -39,9 +39,26 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer class="ui inverted basic segment">
-    <div class="ui container">footer</div>
+    <div class="ui container">
+      <div class="ui stackable grid">
+        <div class="four wide column mobile center">
+          <img src="svg/logo.svg" width="25" />
+          <p>Zbox is a zero-details, privacy-focused embeddable file system.</p>
+          <p class="social">
+            <a href="https://github.com/zboxfs/zbox"><i class="github icon"></i></a>
+            <a href="https://twitter.com"><i class="twitter icon"></i></a>
+          </p>
+          <p class="copyright">&copy; 2017-2018 Zbox</p>
+        </div>
+        <div class="six wide column mobile hidden">fix</div>
+        <div class="six wide column mobile hidden">six</div>
+      </div>
+    </div>
   </footer>
+
 </div>
 
 {{ partial "footer" . }}

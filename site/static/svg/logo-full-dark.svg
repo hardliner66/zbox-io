@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2496.22 1024"><defs><style>.cls-1{fill:#56bc94;}.cls-2,.cls-5{fill:#fff;}.cls-3{opacity:0.2;}.cls-4{fill:none;}.cls-5{font-size:600px;font-family:Ruda-Bold, Ruda;font-weight:700;}</style></defs><title>Asset 12</title><g id="Layer_2" data-name="Layer 2"><g id="outline"><polygon class="cls-1" points="443.5 0 886 256 886 768 443 1024 0 768 0 256 443.5 0"/></g><g id="lower"><polygon id="shape" class="cls-2" points="443 512.25 147 683.13 443 853.06 739 682.5 739 513 443 682.66 443 512.25"/><polygon id="shadow" class="cls-3" points="443.5 512 590.62 768 443 853.06 443.5 512"/></g><g id="upper"><polygon id="shape-2" data-name="shape" class="cls-2" points="443 171 739 341 443.5 512 443 341 147 512 147 341 443 171"/><polygon id="shadow-2" data-name="shadow" class="cls-3" points="443 171 295 256 443.5 512 443 171"/><rect id="_Slice_" data-name="&lt;Slice&gt;" class="cls-4" width="886" height="1023"/></g><g id="text"><text class="cls-5" transform="translate(1127.03 720.53)">Zbox</text></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2496.2 1024" style="enable-background:new 0 0 2496.2 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#56BC94;}
+	.st1{fill:#FFFFFF;}
+	.st2{opacity:0.2;enable-background:new    ;}
+	.st3{fill:none;}
+	.st4{enable-background:new    ;}
+</style>
+<g id="Layer_2">
+	<g id="outline">
+		<polygon class="st0" points="443.5,0 886,256 886,768 443,1024 0,768 0,256 		"/>
+	</g>
+	<g id="lower">
+		<polygon id="shape" class="st1" points="443,512.2 147,683.1 443,853.1 739,682.5 739,513 443,682.7 		"/>
+		<polygon id="shadow" class="st2" points="443.5,512 590.6,768 443,853.1 		"/>
+	</g>
+	<g id="upper">
+		<polygon id="shape-2" class="st1" points="443,171 739,341 443.5,512 443,341 147,512 147,341 		"/>
+		<polygon id="shadow-2" class="st2" points="443,171 295,256 443.5,512 		"/>
+		<rect id="_Slice_" class="st3" width="886" height="1023"/>
+	</g>
+	<g id="text">
+		<g class="st4">
+			<path class="st1" d="M1144.4,720.5v-58.8L1355,362.9v-4.2l-198,4.2v-61.8h279.6v58.8L1229,659.3v3l210-3v61.2H1144.4z"/>
+			<path class="st1" d="M1510.4,266.3h69.6v106.8c33.6-7.6,61.8-11.4,84.6-11.4c79.2,0,118.8,59.4,118.8,178.2
+				c0,125.6-43.4,188.4-130.2,188.4c-18.4,0-41.8-2.4-70.2-7.2c-28.4-4.8-52.6-10.6-72.6-17.4V266.3z M1580,662.3
+				c23.2,5.6,45.2,8.4,66,8.4c20.8,0,34.4-3,40.8-9c16.4-13.6,24.6-57.6,24.6-132c0-38.4-2.4-66.8-7.2-85.2c-2-8-5.8-13.7-11.4-17.1
+				c-5.6-3.4-10.6-5.4-15-6c-4.4-0.6-12-0.9-22.8-0.9c-22,0-47,4-75,12V662.3z"/>
+			<path class="st1" d="M2142.2,545.3c0,60-10.8,105.5-32.4,136.5c-21.6,31-58.1,46.5-109.5,46.5c-51.4,0-88-15.5-109.8-46.5
+				c-21.8-31-32.7-76.5-32.7-136.5s10.9-105.6,32.7-136.8c21.8-31.2,58.4-46.8,109.8-46.8c51.4,0,87.9,15.6,109.5,46.8
+				C2131.4,439.7,2142.2,485.3,2142.2,545.3z M1944.5,648.2c9.8,16.6,28.5,24.9,56.1,24.9s46.2-8.3,55.8-24.9
+				c9.6-16.6,14.4-51,14.4-103.2s-4.8-86.5-14.4-102.9c-9.6-16.4-28.2-24.6-55.8-24.6s-46.3,8.2-56.1,24.6
+				c-9.8,16.4-14.7,50.7-14.7,102.9S1934.7,631.6,1944.5,648.2z"/>
+			<path class="st1" d="M2184.8,720.5L2294,536.9l-105.6-167.4h76.8l69,129h3.6l67.8-129h76.8l-105.6,168l109.2,183h-79.2
+				l-70.2-141.6h-3.6l-69,141.6H2184.8z"/>
+		</g>
+	</g>
+</g>
+</svg>

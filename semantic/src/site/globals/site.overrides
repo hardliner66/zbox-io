@@ -11,6 +11,10 @@
       padding-right: @relative13px;
     }
   }
+
+  .logo {
+    width: @relative57px;
+  }
 }
 
 #hero {
@@ -30,22 +34,24 @@
   }
 }
 
-footer {
-  p {
-    color: @invertedMutedTextColor;
-    font-size: @13px;
-  }
+#footer {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 
-  a {
-    color: @invertedMutedTextColor;
+  #social {
+    margin-bottom: 1rem;
 
-    &:hover {
+    .icon:hover {
       color: white;
     }
   }
 
-  .copyright {
-    font-size: @11px;
+  #copyright {
+    font-size: @12px;
+  }
+
+  #bottom-nav .item {
+    padding-bottom: .5em;
   }
 }
 

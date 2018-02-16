@@ -2,5 +2,6 @@
      User Global Variables
 *******************************/
 
+@primaryColor      : #56BC94;
 @fontName          : 'Open Sans';
 @googleFontSizes   : '300,400,700,400italic';

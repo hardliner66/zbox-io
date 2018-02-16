@@ -5,56 +5,89 @@
   <a class="item" href="/">Home</a>
   <a class="item" href="/start">Get Started</a>
   <a class="item" href="/how">How It Works</a>
-  <a class="item" href="/docs">Docs</a>
+  <a class="item" href="https://docs.rs/zbox">Docs</a>
   <a class="item" href="https://github.com/zboxfs/zbox">GitHub</a>
 </div>
 
 <!-- Main Content -->
 <div class="pusher">
+  <!-- Page Header -->
   <header class="ui basic vertical segment">
     <div id="site-nav" class="ui container">
       <div class="ui large text menu">
         <a class="toc item mobile only"><i class="sidebar icon"></i></a>
-        <a class="item mobile hidden" href="/"><h1 class="ui large header">Zbox</h1></a>
+        <a class="item mobile hidden" href="/"><img class="logo" src="svg/logo-text.svg" alt="Zbox" /></a>
         <nav class="right item mobile hidden">
             <a class="item" href="/start">Get Started</a>
             <a class="item" href="/how">How It Works</a>
-            <a class="item" href="/docs">Docs</a>
+            <a class="item" href="https://docs.rs/zbox">Docs</a>
             <a class="ui primary basic button" href="https://github.com/zboxfs/zbox">GitHub</a>
         </nav>
       </div>
     </div>
   </header>
-  <main class="ui container basic vertical segment">
-    <section id="hero" class="ui stackable centered grid">
-      <div class="center aligned three wide column">
-        <img src="svg/logo.svg" />
+
+  <main class="ui basic vertical segment">
+    <!-- Hero -->
+    <section id="hero" class="ui container">
+      <div class="ui stackable centered grid">
+        <div class="center aligned three wide column">
+          <img src="svg/logo.svg" alt="Zbox Logo" />
+        </div>
+        <div class="seven wide column mobile center">
+          <h1 class="ui huge header">Keep App Files Securely and Privately</h1>
+          <p>Zbox is a zero-details, privacy-focused embeddable file system</p>
+          <button class="ui huge primary button">
+            Get Started <i class="arrow circle right icon"></i>
+          </button>
+        </div>
       </div>
-      <div class="seven wide column mobile center">
-        <h1 class="ui huge header">Keep App Files Securely and Privately</h1>
-        <p>Zbox is a zero-details, privacy-focused embeddable file system.</p>
-        <button class="ui huge primary button">
-          Get Started <i class="arrow circle right icon"></i>
-        </button>
+    </section>
+
+    <section class="ui vertical segment">
+      <div class="ui stackable centered grid container">
+        <div class="ten wide column">
+          <h2>How It Works</h2>
+        </div>
+        <div class="six wide column">
+          <p>How It Works</p>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="ui inverted basic segment">
+  <footer id="footer" class="ui inverted basic segment">
     <div class="ui container">
       <div class="ui stackable grid">
-        <div class="four wide column mobile center">
-          <img src="svg/logo.svg" width="25" />
-          <p>Zbox is a zero-details, privacy-focused embeddable file system.</p>
-          <p class="social">
-            <a href="https://github.com/zboxfs/zbox"><i class="github icon"></i></a>
-            <a href="https://twitter.com"><i class="twitter icon"></i></a>
-          </p>
-          <p class="copyright">&copy; 2017-2018 Zbox</p>
-        </div>
-        <div class="six wide column mobile hidden">fix</div>
-        <div class="six wide column mobile hidden">six</div>
+        <section class="left floated four wide column mobile center">
+          <p><a href="/"><img src="svg/logo-full-dark.svg" height="32" alt="Zbox" /></a></p>
+          <p>A zero-details, privacy-focused embeddable file system</p>
+          <div id="social" class="ui inverted horizontal link list">
+            <a class="item" href="https://github.com/zboxfs/zbox"><i class="github icon"></i></a>
+            <a class="item" href="https://twitter.com/ZboxFS"><i class="twitter icon"></i></a>
+          </div>
+          <p id="copyright">&copy; 2017-2018 Zbox</p>
+        </section>
+        <section class="right floated nine wide column mobile hidden">
+          <nav id="bottom-nav" class="ui two column grid">
+            <section class="column">
+              <h4 class="ui inverted header">How to Use</h4>
+              <div class="ui inverted link list">
+                <a class="item" href="/how">How It Works</a>
+                <a class="item" href="https://docs.rs/zbox">Read the Docs</a>
+              </div>
+            </section>
+            <section class="column">
+              <h4 class="ui inverted header">Community</h4>
+              <div class="ui inverted link list">
+                <a class="item" href="https://github.com/zboxfs/zbox">GitHub Repo</a>
+                <a class="item" href="https://github.com/zboxfs/zbox/issues">Submit an Issue</a>
+                <a class="item" href="https://gitter.im/zboxfs/zbox">Join Chat</a>
+              </div>
+            </section>
+          </nav>
+        </section>
       </div>
     </div>
   </footer>

@@ -34,6 +34,24 @@
   }
 }
 
+#how-it-works {
+  background-color: #343F44;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+
+  .coming-soon {
+    color: @invertedLightTextColor;
+    font-size: @relative12px;
+  }
+}
+
+#features {
+  background-color: lightblue;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
 #footer {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -70,8 +88,29 @@
     text-align: center !important;
   }
 
+  #site-nav {
+    .toc {
+      font-size: 1.5rem;
+    }
+  }
+
   #hero img {
     width: 8rem;
+  }
+
+  #how-it-works {
+    [class*="column"]:not(.center):not(.grid) {
+      padding-left: 4.8em !important;
+
+      img {
+        position: absolute;
+        left: 1rem;
+      }
+
+      h4 {
+        margin-top: 0;
+      }
+    }
   }
 }
 

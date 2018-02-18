@@ -47,9 +47,17 @@
 }
 
 #features {
-  background-color: lightblue;
   padding-top: 3rem;
   padding-bottom: 4rem;
+
+  .icon {
+    color: @primaryColor;
+  }
+
+  .coming-soon {
+    color: @lightTextColor;
+    font-size: @relative12px;
+  }
 }
 
 #footer {

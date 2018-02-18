@@ -63,7 +63,7 @@
         <div class="column">
           <img src="svg/data_protection.svg" width="40" />
           <h4>No-Knowledge, Plugable Storages</h4>
-          <p>Memory, on-disk files, RDBMS(*) and object store(*) can all be plugged as underlying storage, while having zero knowledge of your data.</p>
+          <p>Memory, on-disk files, RDBMS(*) and key-value object store(*) can all be plugged as underlying storage, while having zero knowledge of your data.</p>
           <p class="coming-soon">(*) coming soon</p>
         </div>
       </div>
@@ -71,16 +71,59 @@
 
     <!-- Features -->
     <section id="features" class="ui vertical segment">
-      <div class="ui stackable two column grid container">
+      <div class="ui stackable centered grid container">
         <div class="center aligned sixteen wide column">
           <h2>Features</h2>
         </div>
-        <div class="column">
-          <ul class="ui list">
-            <li>asdf</li>
-          </ul>
+        <div class="row">
+          <div class="ten wide column">
+            <div class="ui relaxed large list">
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Everything is encrypted, including metadata and directory structure</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">State-of-the-art cryptography: AES-256-GCM (hardware), XChaCha20-Poly1305, Argon2 and etc.</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Content-based data chunk deduplication and file-based deduplication</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Data compression using LZ4 in fast mode</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Data integrity is guaranteed by authenticated encryption primitives (AEAD crypto)</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">File contents versioning</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Copy-on-write (COW) semantics</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">ACID transactional operations</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Snapshot</div>
+              </div>
+              <div class="item">
+                <i class="checkmark icon"></i>
+                <div class="content">Multiple storages, including memory, OS file system, RDBMS (*), key-value object store (*)</div>
+              </div>
+              <div class="item coming-soon">
+                (*) coming soon
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column">22323</div>
       </div>
     </section>
   </main>

@@ -17,6 +17,10 @@
   }
 }
 
+#main {
+  padding-bottom: 0;
+}
+
 #hero {
   img {
     width: 10rem;
@@ -34,11 +38,15 @@
   }
 }
 
-#how-it-works {
-  background-color: #343F44;
-  margin-top: 2rem;
+.extra-padding {
   padding-top: 3rem;
   padding-bottom: 3.5rem;
+}
+
+#how {
+  background-color: #343F44;
+  margin-top: 2rem;
+  .extra-padding;
 
   .coming-soon {
     color: @invertedLightTextColor;
@@ -47,8 +55,11 @@
 }
 
 #features {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  .extra-padding;
+
+  li:before {
+    content: none;
+  }
 
   .icon {
     color: @primaryColor;
@@ -60,7 +71,13 @@
   }
 }
 
+#start {
+  background-color: #F8FAFC;
+  .extra-padding;
+}
+
 #footer {
+  margin-top: 0;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 
@@ -106,7 +123,7 @@
     width: 8rem;
   }
 
-  #how-it-works {
+  #how {
     [class*="column"]:not(.center):not(.grid) {
       padding-left: 4.8em !important;
 

@@ -139,6 +139,7 @@
           <div class="twelve wide column">
               <div class="ui top attached tabular menu">
                 <a class="item active" data-tab="rust">Rust</a>
+                <a class="item" data-tab="cpp">C/C++</a>
               </div>
               <div class="ui bottom attached tab segment active" data-tab="rust">
                 <ol class="ui list">
@@ -155,7 +156,7 @@ zbox = "0.4.0"</code></pre>
                     <pre><code class="language-rust">extern crate zbox;</code></pre>
                   </li>
                   <li class="item">
-                    <p>An simple "Hello, world!" example:</p>
+                    <p>A simple "Hello, world!" example:</p>
                     <pre><code class="language-rust">extern crate zbox;
 
 use std::io::{Read, Write};
@@ -191,6 +192,81 @@ fn main() {
                   </li>
                   <li class="item">
                     <p>Start coding by reading the <a href="https://docs.rs/zbox">documentation</a> or <a href="https://github.com/zboxfs/zbox">source code</a>. Have fun!</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="ui bottom attached tab segment" data-tab="cpp">
+                <ol class="ui list">
+                  <li class="item">
+                    <p>Install <a href="https://libsodium.org">libsodium</a> as dependency</p>
+                  </li>
+                  <li class="item">
+                    <p>Clone Zbox source code from GitHub: <a href="https://github.com/zboxfs/zbox">https://github.com/zboxfs/zbox</a></p>
+                  </li>
+                  <li class="item">
+                    <p>Go to the source code directory, then follow the ritual:</p>
+                    <pre><code class="language-bash">./autogen.sh
+./configure
+make && make install</code></pre>
+                  </li>
+                  <li class="item">
+                    <p>A simple "Hello, world!" example in C:</p>
+                    <pre><code class="language-c">#include &lt;stdint.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+#include "zbox.h"
+
+int main() {
+    const char *uri = "mem://repo";
+    const char *pwd = "pwd";
+    int ret;
+
+    // initialise zbox environment, called first
+    ret = zbox_init_env();
+    assert(!ret);
+
+    // create a repo opener
+    zbox_opener opener = zbox_create_opener();
+    zbox_opener_create(opener, true);
+
+    // open a repo
+    zbox_repo repo;
+    ret = zbox_open_repo(&repo, opener, uri, pwd);
+    assert(!ret);
+
+    // free the repo opener
+    zbox_free_opener(opener);
+
+    // create a file for read/write
+    zbox_file file;
+    ret = zbox_repo_create_file(&file, repo, "/file");
+    assert(!ret);
+
+    // write to file and finish it to make a permanent version of content
+    const char *buf = "Hello, world!";
+    size_t buf_len = strlen(buf);
+    ret = zbox_file_write(file, (const uint8_t*)buf, buf_len);
+    assert(ret == buf_len);
+    ret = zbox_file_finish(file);
+    assert(!ret);
+
+    // read file
+    char dst[32] = { 0 };
+    ret = zbox_file_read((uint8_t*)dst, buf_len, file);
+    assert(ret == buf_len);
+    assert(!memcmp(dst, buf, buf_len));
+
+    // close file and repo
+    zbox_close_file(file);
+    zbox_close_repo(repo);
+
+    return 0;
+}
+</code></pre>
+                  </li>
+                  <li class="item">
+                    <p>Find more examples in <a href="https://github.com/zboxfs/zbox">Zbox source code</a>. Have fun!</p>
                   </li>
                 </ol>
               </div>

@@ -186,6 +186,7 @@ fn main() {
 
     // read file content using std::io::Read trait
     let mut content = String::new();
+    file.seek(SeekFrom::Start(0)).unwrap();
     file.read_to_string(&mut content).unwrap();
     assert_eq!(content, "Hello, world!");
 }</code></pre>
